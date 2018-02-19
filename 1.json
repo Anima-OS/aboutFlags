@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Netflix1080",
+    "description": "Play back Netflix movies at up to 1080p resolution.",
+    "links": [
+    ],
+    "preferences": [
+      {
+        "name": "extensions.netflix1080.enabled"
+      }
+    ]
+  },
+  {
+    "name": "WebP",
+    "description": "Enable experimental WebP image support.",
+    "links": [
+      {
+        "text": "Try out",
+        "href": "https://mathiasbynens.be/demo/animated-webp"
+      },
+      {
+        "text": "Learn more",
+        "href": "https://developers.google.com/speed/webp/"
+      }
+    ],
+    "preferences": [
+      {
+        "name": "image.webp.enabled"
+      }
+    ]
+  }
+]
