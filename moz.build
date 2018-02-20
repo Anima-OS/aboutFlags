@@ -1,0 +1,6 @@
+EXTRA_COMPONENTS += [
+  'aboutFlags.js',
+  'aboutFlags.manifest',
+]
+
+JAR_MANIFESTS += ['jar.mn']

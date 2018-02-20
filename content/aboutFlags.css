@@ -1,0 +1,186 @@
+:root {
+  --icon-background-color-1: #0A84FF;
+  --icon-background-color-2: #008EA4;
+  --icon-background-color-3: #ED00B5;
+  --icon-background-color-4: #058B00;
+  --icon-background-color-5: #A47F00;
+  --icon-background-color-6: #FF0039;
+  --icon-background-disabled-color: #737373;
+  --body-text-disabled-color: #737373;
+  --info-box-background-color: #D7D7DB;
+  --info-box-border-color: #98979C;
+  --experiment-status-active-color: #058B00;
+  --experiment-status-disabled-color: #737373;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+button > .button-box {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.check-box {
+  outline: 0
+}
+
+a:visited {
+  color: var(--in-content-link-color);
+}
+
+.about-flags-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25rem;
+  min-height: 100%;
+  width: 100%;
+}
+
+#categories {
+  flex: 0 0;
+  margin: 0;
+  min-width: 200px;
+  padding: 40px 0 0;
+}
+
+#categories .category {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.info-box {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.info-box-content {
+  align-items: center;
+  background: var(--info-box-background-color);
+  border: 1px solid var(--info-box-border-color);
+  display: inline-flex;
+  padding: 10px 15px;
+}
+
+.info-box-content > * {
+  margin-right: 10px;
+}
+
+.info-box-content > *:last-child {
+  margin-right: 0;
+}
+
+.experiment-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experiment {
+  align-items: center;
+  border-bottom: 1px solid var(--in-content-border-color);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.experiment.disabled {
+  color: var(--body-text-disabled-color);
+}
+
+.experiment .experiment-status {
+  color: var(--experiment-status-active-color);
+  font-weight: bold;
+}
+
+.experiment.disabled .experiment-status {
+  color: var(--experiment-status-disabled-color);
+}
+
+.experiment:last-child {
+  border-bottom: none;
+}
+
+.experiment > * {
+  margin-right: 15px;
+}
+
+.experiment > *:last-child {
+  margin-right: 0;
+}
+
+.experiment-icon {
+  color: #FFF;
+  flex: 0 0 40px;
+  font-size: 26px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.experiment:nth-child(6n+0) .experiment-icon {
+  background: var(--icon-background-color-1);
+}
+
+.experiment:nth-child(6n+1) .experiment-icon {
+  background: var(--icon-background-color-2);
+}
+
+.experiment:nth-child(6n+2) .experiment-icon {
+  background: var(--icon-background-color-3);
+}
+
+.experiment:nth-child(6n+3) .experiment-icon {
+  background: var(--icon-background-color-4);
+}
+
+.experiment:nth-child(6n+4) .experiment-icon {
+  background: var(--icon-background-color-5);
+}
+
+.experiment:nth-child(6n+5) .experiment-icon {
+  background: var(--icon-background-color-6);
+}
+
+.experiment.disabled .experiment-icon {
+  background: var(--icon-background-disabled-color);
+}
+
+.experiment-details {
+  flex: 1;
+  overflow: hidden;
+}
+
+.experiment-name {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+.experiment-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.experiment-description > * {
+  margin-right: 5px;
+}
+
+.experiment-description > *:last-child {
+  margin-right: 0;
+}
+
+.experiment-actions {
+  flex: 0 0;
+}

@@ -1,0 +1,7 @@
+browser.jar:
+  content/browser/aboutflags/experiments.svg (content/experiments.svg)
+  content/browser/aboutflags/aboutFlags.css (content/aboutFlags.css)
+  content/browser/aboutflags/aboutFlags.html (content/aboutFlags.html)
+  content/browser/aboutflags/aboutFlags.js (content/aboutFlags.js)
+  content/browser/aboutflags/common.js (content/common.js)
+  content/browser/aboutflags/experiments.js (content/experiments.js)
